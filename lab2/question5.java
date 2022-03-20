@@ -1,22 +1,26 @@
+import java.util.*;
+
 public class question5 {
     public static void main(String[] args) {
-        int[] arr = { 1, 3, 2, 4, 5, 7, 10, 15, 19, 16 };
+        System.out.println("CODE BY- PURVI RAWAT    ST.iD=200121039   SEC= F");
+        System.out.println();
+        System.out.println();
+        int[] arr = { 1, 2, 3, 4 };
+
         int i = 0;
-        int j = 0;
 
         for (i = 0; i < arr.length - 1; i++) {
-            int count = 0;
-            int k = i + 1;
-            for (j = 0; j < arr.length ; j++) {
-                if (arr[i] + arr[j] != arr[k]) {
-                    k++;
-                    count++;
-                }
 
+            for (int j = 0; j < arr.length; j++) {
+                for (int k = 0; k < arr.length; k++) {
+                    if (arr[i] + arr[j] == arr[k]) {
+                        System.out.println("i= " + i + " j=" + j + " k= " + k);
+
+                    }
+                }
             }
-            if (count == 0)
-                System.out.println("i= " + i + "  j= " + j + "  k= " + k);
         }
+
     }
 
 }
