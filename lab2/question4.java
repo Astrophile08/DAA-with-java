@@ -10,7 +10,7 @@ public class question4 {
         int last = binary(arr, target, false);
     
         int ans = ((last - first) + 1);
-        if (ans == 1)
+        if (ans !=0)
             System.out.println("Found");
         System.out.println("no. of copies of target: " + target + " = " + ans);
     }

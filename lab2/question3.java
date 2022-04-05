@@ -6,25 +6,29 @@ public class question3 {
         System.out.println("CODE BY- PURVI RAWAT    ST.iD=200121039   SEC= F");
         System.out.println();
         System.out.println();
-        int[] arr = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 13, 15, 17 };
-        int target = 15;
+        int[] arr = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 13, 15, 17, 18 };
+        int target = 13;
         int ans = range(arr, target);
         System.out.println(target + " found at index:: " + ans);
 
     }
 
     static int range(int[] arr, int target) {
-        int start = 1;
-        int end = 4;
-
+        int start = 0;
+        int end = 2;
+        int i = 2;
+        int ans = -1;
         while (end < arr.length) {
-            int i = 3;
+
             int newstart = end;
             end = (int) Math.pow(2, i);
             start = newstart;
-            return binary(arr, target, start, end);
+            i++;
+            System.out.println(i);
+            ans = binary(arr, target, start, end);
+
         }
-        return -1;
+        return ans;
 
     }
 
