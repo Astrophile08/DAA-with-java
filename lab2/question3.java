@@ -24,7 +24,8 @@ public class question3 {
             end = (int) Math.pow(2, i);
             start = newstart;
             i++;
-            System.out.println(i);
+
+            
             ans = binary(arr, target, start, end);
 
         }
